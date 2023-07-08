@@ -11,17 +11,17 @@ const Header = () => {
       <Link href="/"><Image src={logo} alt="logo" className="w-40" /></Link>
       <ul className="flex gap-x-10">
         <li className="text-lg">
-          <Link href="">
+          <Link href="/category/Female">
             Female
           </Link>
         </li>
         <li className="text-lg">
-          <Link href="">
+          <Link href="/category/Male">
             Male
           </Link>
         </li>
         <li className="text-lg">
-          <Link href="">
+          <Link href="/category/kids">
             Kids
           </Link>
         </li>
