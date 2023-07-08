@@ -8,9 +8,9 @@ const Header = () => {
   return (
 
     <div className="flex justify-between items-center py-6 px-8">
-      <Link href="/"><Image src={logo} alt="logo"  className="w-40" /></Link>
+      <Link href="/"><Image src={logo} alt="logo" className="w-40" /></Link>
       <ul className="flex gap-x-10">
-        <li className="text-1g">
+        <li className="text-lg">
           <Link href="">
             Female
           </Link>
@@ -18,17 +18,20 @@ const Header = () => {
         <li className="text-lg">
           <Link href="">
             Male
-          </Link></li>
+          </Link>
+        </li>
         <li className="text-lg">
           <Link href="">
             Kids
-          </Link></li>
+          </Link>
+        </li>
         <li className="text-lg">
-          <Link href="">
+          <Link href="/products">
             All Products
-          </Link></li>
+          </Link>
+        </li>
       </ul>
-      <div className="h-8 w-8 rounded-full bg-gray-200 flex justify-center item" >
+      <div className="h-8 w-8 rounded-full bg-gray-200 flex justify-center items-center" >
         <ShoppingCart className="h-6 w-6" />
       </div>
     </div>
