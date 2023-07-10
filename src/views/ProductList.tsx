@@ -19,7 +19,7 @@ const ProductList = () => {
             <section className='flex justify-evenly gap-y-6 lg:flex-row py-6 '>
                 {
                     prodChunks?.map((product)=>(
-                         <ProductCard key={product.id} title={product.name} price={product.price} img={product.image} category={product.category} />
+                         <ProductCard key={product.id} title={product.name} price={product.price} img={product.image} category={product.category} id={product.id} />
                     ))
                 }
             </section>

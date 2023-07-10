@@ -21,7 +21,7 @@ const Header = () => {
           </Link>
         </li>
         <li className="text-lg">
-          <Link href="/category/kids">
+          <Link href="/category/Kids">
             Kids
           </Link>
         </li>
