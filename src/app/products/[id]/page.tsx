@@ -2,6 +2,7 @@ import React from 'react'
 import { Products } from '@/utils/mock'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import Quantity from '@/components/Quantity'
 
 const getProductByDetail = (id: number | string) => {
     return Products.filter((product) => product.id == id)
@@ -16,7 +17,7 @@ export default function Page({ params }: { params: { id: string } }) {
                 result.map((product) => (
                     <div key={product.id} className='flex flex-col gap-y-6 lg:flex-row py-6 ' >
                         <div className='flex'>
-                        {/* <Image src={product.image} alt={product.name}  className='scale-50 flex justify-start items-start'/> */}
+                            {/* <Image src={product.image} alt={product.name}  className='scale-50 flex justify-start items-start'/> */}
 
                             <Image src={product.image} alt={product.name} />
                         </div>
@@ -36,6 +37,11 @@ export default function Page({ params }: { params: { id: string } }) {
                                     <Button variant="ghost">L</Button>
                                     <Button variant="ghost">XL</Button>
 
+                                </div>
+                                <div className='flex items-center S'>
+                                    <h2 className="scroll-m-20 text-md font-semibold tracking-tight transition-colors mt-4">
+                                        Quantity</h2>
+                                    <Quantity/>
                                 </div>
                             </div>
                             <div className='flex items-center mt-4'>
