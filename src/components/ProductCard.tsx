@@ -9,7 +9,7 @@ const ProductCard = (props: {
     price: number,
     img: StaticImageData,
     category: string,
-    id: string
+    id:number
 }) => {
     return (
 <Link href={`/products/${props.id}`}>
