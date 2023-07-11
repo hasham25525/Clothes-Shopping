@@ -47,7 +47,7 @@ export default function Page({ params }: { params: { id: string } }) {
                             <div className='flex items-center mt-4'>
                                 <Button variant="default">Add To Cart</Button>
 
-                                <p className='mx-3 text-xl font-bold font-sans'>Price: ${product.price}.00</p>
+                                <p className='mx-3 text-xl font-bold font-sans'>Price: ${product.price.toFixed(2)}</p>
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@ const Quantity = () => {
         <>
             <div className='flex ml-3 mt-3 gap-4'>
                 <button className='w-6 h-6 border rounded-full flex justify-center items-center hover:' onClick={() => {
-                    setNum(num < 2 ? 1 : num - 1);
+                    setNum(num <=1 ? 1 : num - 1);
                 }}>
                     -
                 </button>
