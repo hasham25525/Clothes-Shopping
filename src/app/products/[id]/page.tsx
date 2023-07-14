@@ -3,6 +3,7 @@ import { Products } from '@/utils/mock'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Quantity from '@/components/Quantity'
+import AddToCart from '@/components/AddToCart'
 
 const getProductByDetail = (id: number | string) => {
     return Products.filter((product) => product.id == id)
@@ -45,7 +46,8 @@ export default function Page({ params }: { params: { id: string } }) {
                                 </div>
                             </div>
                             <div className='flex items-center mt-4'>
-                                <Button variant="default">Add To Cart</Button>
+                                {/* <Button variant="default">Add To Cart</Button> */}
+                                <AddToCart/>
 
                                 <p className='mx-3 text-xl font-bold font-sans'>Price: ${product.price.toFixed(2)}</p>
                             </div>
