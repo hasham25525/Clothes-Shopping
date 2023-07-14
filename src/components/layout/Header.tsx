@@ -1,16 +1,25 @@
+'use client'
+
 import React from 'react'
 import logo from '/public/logo.webp'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ShoppingCart, Menu } from 'lucide-react';
+import { useSelector } from 'react-redux/'
+import { RootState } from '@/store/store'
 
 
 const Header = () => {
+
+  const cartValue = useSelector(
+    (state: RootState) => state.cart.totalQuantity
+  );
+
   return (
 
     <nav className="flex justify-between items-center py-6 px-8 bg-black" >
 
-      <input type="checkbox" id='check'/>
+      <input type="checkbox" id='check' />
       <label htmlFor="check" className='checkbtn'>
         <Menu className=' h-8 w-8 text-white' />
       </label>
@@ -38,7 +47,10 @@ const Header = () => {
           </Link>
         </li>
       </ul>
-      <div className="h-8 w-8 rounded-full bg-gray-950 flex justify-center items-center" >
+      <div className="h-8 w-8 rounded-full bg-gray-950 flex justify-center items-center relative" >
+        <span className='absolute right-1 top-0 rounded-full h-3 w-3 bg-red-600 text-white text-xs flex justify-center items-center'> 
+        {cartValue}
+        </span>
         <ShoppingCart className="h-6 w-6 text-white" />
       </div>
     </nav>
