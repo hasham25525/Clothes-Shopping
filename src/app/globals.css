@@ -78,6 +78,7 @@
   }
 }
 
+
 .nav_links:hover {
 
   text-shadow: 2px 1px 8px white;
@@ -86,7 +87,6 @@
 .links {
   display: flex;
   column-gap: 2rem;
-  /* display:inline-block; */
 
 }
 
@@ -102,6 +102,7 @@
   }
 
   .links {
+    /* padding-top:80px ; */
     display: inline-block;
     position: fixed;
     height: 100vh;

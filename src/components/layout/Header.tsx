@@ -8,7 +8,7 @@ import { ShoppingCart, Menu } from 'lucide-react';
 const Header = () => {
   return (
 
-    <div className="flex justify-between items-center py-6 px-8 bg-black" >
+    <nav className="flex justify-between items-center py-6 px-8 bg-black" >
 
       <input type="checkbox" id='check'/>
       <label htmlFor="check" className='checkbtn'>
@@ -41,7 +41,7 @@ const Header = () => {
       <div className="h-8 w-8 rounded-full bg-gray-950 flex justify-center items-center" >
         <ShoppingCart className="h-6 w-6 text-white" />
       </div>
-    </div>
+    </nav>
   )
 }
 
