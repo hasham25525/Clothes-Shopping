@@ -28,7 +28,7 @@ const Header = () => {
       <ul className=" links ">
         <li className="text-lg nav_links text-white">
           <Link href="/category/Female">
-            Female 
+            Female  
           </Link>
         </li>
         <li className="text-lg nav_links text-white">
