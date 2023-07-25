@@ -16,7 +16,7 @@ const Header = () => {
   );
 
   return (
-
+ 
     <nav className="flex justify-between items-center py-6 px-8 bg-black" >
 
       <input type="checkbox" id='check' />
