@@ -10,7 +10,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     const result = getProductByCategory(params.slug);
     return (
 
-        <div className='flex justify-evenly py-10  flex-wrap category'>
+        <div className='flex justify-evenly py-10  flex-wrap '>
 
 
             {
