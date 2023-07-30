@@ -25,6 +25,6 @@ export default function Page({ params }: { params: { slug: string } }) {
                 )
                 )) : (<p> No Product Found</p>)
             }
-        </div>
+        </div> 
     )
 } 
