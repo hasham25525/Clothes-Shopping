@@ -47,8 +47,8 @@ const Header = () => {
           </Link>
         </li>
       </ul>
-      <div className="h-8 w-8 rounded-full bg-gray-950 flex justify-center items-center relative" >
-        <span className='absolute right-1 top-0 rounded-full h-3 w-3 bg-red-600 text-white text-xs flex justify-center items-center'> 
+      <div className="h-8 w-8 rounded-full bg-gray-950 flex justify-center items-center relative x`" >
+        <span className='absolute right-1 top-0 rounded-full h-3 w-3 bg-red-600 text-white text-xs flex justify-center items-center z-10'> 
         {cartValue}
         </span>
         <ShoppingCart className="h-6 w-6 text-white" />
